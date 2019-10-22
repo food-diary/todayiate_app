@@ -5,20 +5,20 @@ import { Text } from "../../components/text"
 import { Screen } from "../../components/screen"
 // import { useStores } from "../../models/root-store"
 import { color } from "../../theme"
-import { NavigationScreenProps } from "react-navigation"
+import { NavigationStackScreenProps } from "react-navigation-stack"
 
-export interface SignupScreenProps extends NavigationScreenProps<{}> {
+export interface SignupScreenProps extends NavigationStackScreenProps<{}> {
 }
 
 const ROOT: ViewStyle = {
-  backgroundColor: color.palette.black,
+  backgroundColor: color.palette.white,
 }
 
 export const SignupScreen: React.FunctionComponent<SignupScreenProps> = observer((props) => {
   // const { someStore } = useStores()
   return (
     <Screen style={ROOT} preset="scroll">
-      <Text preset="header" tx="signupScreen.header" />
+      <Text preset="header" text="회원가입" />
     </Screen>
   )
 })

@@ -1,12 +1,15 @@
 import { createStackNavigator } from "react-navigation-stack"
 import { BottomNavigator } from "./bottom-navigator"
+import photoNavigator from "./photo-navigator"
 
 export const PrimaryNavigator = createStackNavigator(
   {
     bottomTab: { screen: BottomNavigator },
+    photoStack: { screen: photoNavigator },
   },
   {
     headerMode: "none",
+    mode: "modal"
   },
 )
 

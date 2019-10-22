@@ -7,18 +7,18 @@ import { Screen } from "../../components/screen"
 import { color } from "../../theme"
 import { NavigationStackScreenProps } from "react-navigation-stack"
 
-export interface HomeScreenProps extends NavigationStackScreenProps<{}> {
+export interface CameraRollScreenProps extends NavigationStackScreenProps<{}> {
 }
 
 const ROOT: ViewStyle = {
-  backgroundColor: color.palette.white,
+  backgroundColor: color.palette.black,
 }
 
-export const HomeScreen: React.FunctionComponent<HomeScreenProps> = observer((props) => {
+export const CameraRollScreen: React.FunctionComponent<CameraRollScreenProps> = observer((props) => {
   // const { someStore } = useStores()
   return (
     <Screen style={ROOT}>
-      <Text preset="header" text="식단일기" />
+      <Text preset="header" text="카메라롤" />
     </Screen>
   )
 })

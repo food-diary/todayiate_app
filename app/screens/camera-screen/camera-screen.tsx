@@ -1,7 +1,6 @@
 import * as React from "react"
 import { observer } from "mobx-react-lite"
-import { ViewStyle, View, TouchableOpacity, ImageStyle, Alert } from "react-native"
-import { Text } from "../../components/text"
+import { ViewStyle, ImageStyle, Dimensions } from "react-native"
 import { Screen } from "../../components/screen"
 // import { useStores } from "../../models/root-store"
 import { color } from "../../theme"
@@ -10,8 +9,6 @@ import { useCamera } from "react-native-camera-hooks"
 import { CameraOptions } from "react-native-camera-hooks/src/initialState"
 import { Button } from "../../components/button"
 import { Icon } from "../../components/icon"
-import { save } from "../../utils/storage"
-import { useStores } from "../../models/root-store"
 import { NavigationStackScreenProps } from "react-navigation-stack"
 
 export interface CameraScreenProps extends CameraOptions, NavigationStackScreenProps<{}> {
@@ -19,7 +16,7 @@ export interface CameraScreenProps extends CameraOptions, NavigationStackScreenP
 
 const ROOT: ViewStyle = {
   flex: 1,
-  backgroundColor: color.palette.black,
+  backgroundColor: color.palette.white,
 }
 
 const BACK_BUTTON: ViewStyle = {

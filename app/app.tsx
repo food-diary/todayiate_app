@@ -18,6 +18,8 @@ import { contains } from "ramda"
 YellowBox.ignoreWarnings([
   "componentWillMount is deprecated",
   "componentWillReceiveProps is deprecated",
+  "componentWillReceiveProps has been renamed",
+  "`-[RCTRootView cancelTouches]` is deprecated and will be deleted soon.",
 ])
 
 /**

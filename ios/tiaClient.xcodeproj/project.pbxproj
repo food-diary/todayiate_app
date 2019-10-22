@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* tiaClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tiaClientTests.m */; };
 		0DAB2F842CB09F6F5066B1BB /* libPods-tiaClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3CAF61CCB61C6886670490 /* libPods-tiaClientTests.a */; };
