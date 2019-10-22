@@ -19,7 +19,7 @@ export function TabBarIcon(props: TabBarIconProps) {
 
   return (
     <View style={{ width: 24, height: 24, margin: 5 }}>
-      <VectorIcon name={name} size={25} color={tintColor} />
+      <VectorIcon name={name} size={22} color={tintColor} />
     </View>
   )
 }
