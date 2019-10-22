@@ -2,7 +2,18 @@ import { createBottomTabNavigator } from "react-navigation-tabs"
 import { HomeNavigator } from "./home-navigator"
 import { ProfileNavigator } from "./profile-navigator"
 import { TabBarIcon } from "../components/tab-bar-icon"
-import { View } from "react-native"
+import { View, Platform } from "react-native"
+
+const IOS_BOTTOM_TAB = {
+  borderTopWidth: 0,
+  shadowOpacity: 0.3,
+  shadowColor: "#ddd",
+}
+
+const ANDROID_BOTTOM_TAB = {
+  borderTopWidth: 0.2,
+  borderTopColor: "#ddd",
+}
 
 export const BottomNavigator = createBottomTabNavigator(
   {
@@ -31,7 +42,7 @@ export const BottomNavigator = createBottomTabNavigator(
       showLabel: false,
       activeTintColor: "tomato",
       inactiveTintColor: "gray",
-      style: { borderTopWidth: 0, shadowOpacity: 0.3, shadowColor: "#ddd" },
+      style: Platform.OS === "ios" ? IOS_BOTTOM_TAB : ANDROID_BOTTOM_TAB,
     },
   },
 )
