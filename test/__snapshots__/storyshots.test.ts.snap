@@ -120,8 +120,8 @@ exports[`Storyshots Button Style Presets 1`] = `
                   "borderRadius": 4,
                   "justifyContent": "center",
                   "opacity": 1,
-                  "paddingHorizontal": 8,
-                  "paddingVertical": 8,
+                  "paddingHorizontal": 2,
+                  "paddingVertical": 2,
                 }
               }
             >
@@ -131,7 +131,7 @@ exports[`Storyshots Button Style Presets 1`] = `
                     "color": "#ffffff",
                     "fontFamily": "Montserrat",
                     "fontSize": 9,
-                    "paddingHorizontal": 12,
+                    "paddingHorizontal": 3,
                   }
                 }
               >
@@ -236,8 +236,8 @@ exports[`Storyshots Button Style Presets 1`] = `
                   "borderRadius": 4,
                   "justifyContent": "center",
                   "opacity": 1,
-                  "paddingHorizontal": 8,
-                  "paddingVertical": 8,
+                  "paddingHorizontal": 2,
+                  "paddingVertical": 2,
                 }
               }
             >
@@ -247,7 +247,7 @@ exports[`Storyshots Button Style Presets 1`] = `
                     "color": "#ffffff",
                     "fontFamily": "Montserrat",
                     "fontSize": 9,
-                    "paddingHorizontal": 12,
+                    "paddingHorizontal": 3,
                   }
                 }
               >
@@ -352,7 +352,7 @@ exports[`Storyshots Button Style Presets 1`] = `
                   "borderRadius": 0,
                   "justifyContent": "center",
                   "opacity": 1,
-                  "paddingHorizontal": 8,
+                  "paddingHorizontal": 2,
                   "paddingVertical": 100,
                 }
               }
@@ -363,7 +363,7 @@ exports[`Storyshots Button Style Presets 1`] = `
                     "color": "#a511dc",
                     "fontFamily": "Montserrat",
                     "fontSize": 20,
-                    "paddingHorizontal": 12,
+                    "paddingHorizontal": 3,
                   }
                 }
               >
@@ -496,7 +496,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                   "alignSelf": "flex-start",
                   "flexDirection": "row",
                   "opacity": 1,
-                  "paddingVertical": 4,
+                  "paddingVertical": 2,
                 }
               }
             >
@@ -521,7 +521,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                     "color": "#ffffff",
                     "fontFamily": "Montserrat",
                     "fontSize": 15,
-                    "paddingLeft": 8,
+                    "paddingLeft": 2,
                   }
                 }
               >
@@ -624,7 +624,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                   "alignSelf": "flex-start",
                   "flexDirection": "row",
                   "opacity": 1,
-                  "paddingVertical": 4,
+                  "paddingVertical": 2,
                 }
               }
             >
@@ -659,7 +659,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                     "color": "#ffffff",
                     "fontFamily": "Montserrat",
                     "fontSize": 15,
-                    "paddingLeft": 8,
+                    "paddingLeft": 2,
                   }
                 }
               >
@@ -762,7 +762,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                   "alignSelf": "flex-start",
                   "flexDirection": "row",
                   "opacity": 1,
-                  "paddingVertical": 4,
+                  "paddingVertical": 2,
                 }
               }
             >
@@ -787,7 +787,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                     "color": "#ffffff",
                     "fontFamily": "Montserrat",
                     "fontSize": 15,
-                    "paddingLeft": 8,
+                    "paddingLeft": 2,
                   }
                 }
               >
@@ -921,7 +921,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                     "alignSelf": "flex-start",
                     "flexDirection": "row",
                     "opacity": 1,
-                    "paddingVertical": 4,
+                    "paddingVertical": 2,
                   }
                 }
               >
@@ -946,7 +946,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                       "color": "#ffffff",
                       "fontFamily": "Montserrat",
                       "fontSize": 15,
-                      "paddingLeft": 8,
+                      "paddingLeft": 2,
                     }
                   }
                 >
@@ -1079,7 +1079,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                       "color": "#ffffff",
                       "fontFamily": "Montserrat",
                       "fontSize": 15,
-                      "paddingLeft": 8,
+                      "paddingLeft": 2,
                     }
                   }
                 >
@@ -1184,7 +1184,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                     "alignSelf": "flex-start",
                     "flexDirection": "row",
                     "opacity": 1,
-                    "paddingVertical": 4,
+                    "paddingVertical": 2,
                   }
                 }
               >
@@ -1209,7 +1209,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                       "color": "#ffffff",
                       "fontFamily": "Montserrat",
                       "fontSize": 15,
-                      "paddingLeft": 8,
+                      "paddingLeft": 2,
                     }
                   }
                 >
@@ -1314,7 +1314,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                     "alignSelf": "flex-start",
                     "flexDirection": "row",
                     "opacity": 1,
-                    "paddingVertical": 4,
+                    "paddingVertical": 2,
                   }
                 }
               >
@@ -1339,7 +1339,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                       "color": "#ffffff",
                       "fontFamily": "Montserrat",
                       "fontSize": 15,
-                      "paddingLeft": 8,
+                      "paddingLeft": 2,
                     }
                   }
                 >
@@ -1469,7 +1469,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                       "color": "#ffffff",
                       "fontFamily": "Montserrat",
                       "fontSize": 15,
-                      "paddingLeft": 8,
+                      "paddingLeft": 2,
                     }
                   }
                 >
@@ -1595,7 +1595,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                   "borderTopLeftRadius": 8,
                   "borderTopRightRadius": 8,
                   "borderWidth": 1,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -1617,7 +1617,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                   "borderBottomWidth": 0,
                   "borderColor": "#e6e6e6",
                   "borderWidth": 1,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -1639,7 +1639,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                   "borderBottomWidth": 0,
                   "borderColor": "#e6e6e6",
                   "borderWidth": 1,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -1662,7 +1662,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                   "borderBottomRightRadius": 8,
                   "borderColor": "#e6e6e6",
                   "borderWidth": 1,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -1763,7 +1763,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                 Object {
                   "borderColor": "rgba(0, 0, 0, 0)",
                   "borderWidth": 1,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -1785,7 +1785,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                   "borderColor": "#e6e6e6",
                   "borderRadius": 8,
                   "borderWidth": 1,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -1808,7 +1808,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                   "borderColor": "#e6e6e6",
                   "borderWidth": 1,
                   "marginTop": 10,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -1942,7 +1942,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                   "borderTopLeftRadius": 8,
                   "borderTopRightRadius": 8,
                   "borderWidth": 1,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -2055,7 +2055,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                   "borderBottomWidth": 0,
                   "borderColor": "#e6e6e6",
                   "borderWidth": 1,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -2158,7 +2158,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                   "borderBottomRightRadius": 8,
                   "borderColor": "#e6e6e6",
                   "borderWidth": 1,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -2271,7 +2271,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                   "borderColor": "#e6e6e6",
                   "borderRadius": 8,
                   "borderWidth": 1,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -2372,7 +2372,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                 Object {
                   "borderColor": "#e6e6e6",
                   "borderWidth": 1,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -2473,7 +2473,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                 Object {
                   "borderColor": "rgba(0, 0, 0, 0)",
                   "borderWidth": 1,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -2604,7 +2604,7 @@ exports[`Storyshots FormRow Styling 1`] = `
                 Object {
                   "borderColor": "#32cd32",
                   "borderWidth": 5,
-                  "padding": 8,
+                  "padding": 2,
                 }
               }
             >
@@ -2744,9 +2744,9 @@ exports[`Storyshots Header Behavior 1`] = `
                     "alignItems": "center",
                     "flexDirection": "row",
                     "justifyContent": "flex-start",
-                    "paddingBottom": 24,
-                    "paddingHorizontal": 16,
-                    "paddingTop": 24,
+                    "paddingBottom": 5,
+                    "paddingHorizontal": 4,
+                    "paddingTop": 5,
                   }
                 }
               >
@@ -2881,9 +2881,9 @@ exports[`Storyshots Header Behavior 1`] = `
                     "alignItems": "center",
                     "flexDirection": "row",
                     "justifyContent": "flex-start",
-                    "paddingBottom": 24,
-                    "paddingHorizontal": 16,
-                    "paddingTop": 24,
+                    "paddingBottom": 5,
+                    "paddingHorizontal": 4,
+                    "paddingTop": 5,
                   }
                 }
               >
@@ -3048,9 +3048,9 @@ exports[`Storyshots Header Behavior 1`] = `
                     "alignItems": "center",
                     "flexDirection": "row",
                     "justifyContent": "flex-start",
-                    "paddingBottom": 24,
-                    "paddingHorizontal": 16,
-                    "paddingTop": 24,
+                    "paddingBottom": 5,
+                    "paddingHorizontal": 4,
+                    "paddingTop": 5,
                   }
                 }
               >
@@ -3121,6 +3121,180 @@ exports[`Storyshots Header Behavior 1`] = `
                 </View>
               </View>
             </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;
+
+exports[`Storyshots HeaderIcon Style Presets 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#f0f0f0",
+        "flex": 1,
+      },
+      Object {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <RCTScrollView>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#eee",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderBottomColor": "#e6e6e6",
+                "borderBottomWidth": 1,
+                "paddingBottom": 10,
+                "paddingHorizontal": 10,
+                "paddingTop": 20,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderTopColor": "#e6e6e6",
+                  "borderTopWidth": 1,
+                  "flexDirection": "row",
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#666",
+                    "fontSize": 10,
+                    "paddingBottom": 2,
+                    "paddingHorizontal": 4,
+                  }
+                }
+              >
+                Use Case
+              </Text>
+            </View>
+            <View
+              style={Object {}}
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#3d3d3d",
+                    "fontWeight": "600",
+                  }
+                }
+              >
+                Primary
+              </Text>
+            </View>
+            <Text
+              style={
+                Object {
+                  "color": "#666",
+                  "fontSize": 10,
+                  "paddingTop": 0,
+                }
+              }
+            >
+              The primary.
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "#fff",
+                "padding": 10,
+              }
+            }
+          >
+            <RNGestureHandlerButton
+              collapsable={false}
+              onGestureEvent={[Function]}
+              onGestureHandlerEvent={[Function]}
+              onGestureHandlerStateChange={[Function]}
+              onHandlerStateChange={[Function]}
+              rippleColor={0}
+              style={
+                Array [
+                  Object {
+                    "overflow": "hidden",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                accessible={true}
+                style={
+                  Object {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "marginLeft": 4,
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "margin": 0,
+                        "padding": 0,
+                      }
+                    }
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      style={
+                        Array [
+                          Object {
+                            "color": "#efefef",
+                            "fontSize": 30,
+                          },
+                          undefined,
+                          Object {
+                            "fontFamily": "anticon",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          Object {},
+                        ]
+                      }
+                    >
+                      
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </RNGestureHandlerButton>
           </View>
         </View>
       </View>
@@ -4156,34 +4330,41 @@ exports[`Storyshots TabBarIcon Style Presets 1`] = `
             <View
               style={
                 Object {
-                  "height": 24,
+                  "height": 30,
                   "margin": 5,
-                  "width": 24,
+                  "width": 30,
                 }
               }
             >
-              <Text
-                allowFontScaling={false}
+              <View
                 style={
-                  Array [
-                    Object {
-                      "color": undefined,
-                      "fontSize": 25,
-                    },
-                    undefined,
-                    Object {
-                      "fontFamily": "FontAwesome5Free-Solid",
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                    },
-                    Object {
-                      "fontWeight": "900",
-                    },
-                  ]
+                  Object {
+                    "margin": 0,
+                    "padding": 0,
+                  }
                 }
               >
-                
-              </Text>
+                <Text
+                  allowFontScaling={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": undefined,
+                        "fontSize": 30,
+                      },
+                      undefined,
+                      Object {
+                        "fontFamily": "anticon",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
             </View>
           </View>
         </View>
@@ -5275,7 +5456,7 @@ exports[`Storyshots TextField Labelling 1`] = `
             <View
               style={
                 Object {
-                  "paddingVertical": 12,
+                  "paddingVertical": 3,
                 }
               }
             >
@@ -5392,7 +5573,7 @@ exports[`Storyshots TextField Labelling 1`] = `
             <View
               style={
                 Object {
-                  "paddingVertical": 12,
+                  "paddingVertical": 3,
                 }
               }
             >
@@ -5528,7 +5709,7 @@ exports[`Storyshots TextField Ref Forwarding 1`] = `
             <View
               style={
                 Object {
-                  "paddingVertical": 12,
+                  "paddingVertical": 3,
                 }
               }
             >
@@ -5692,7 +5873,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                 Object {
                   "paddingHorizontal": 40,
                   "paddingTop": 0,
-                  "paddingVertical": 12,
+                  "paddingVertical": 3,
                 }
               }
             >
@@ -5729,7 +5910,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
               style={
                 Object {
                   "paddingBottom": 0,
-                  "paddingVertical": 12,
+                  "paddingVertical": 3,
                 }
               }
             >
@@ -5845,7 +6026,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
             <View
               style={
                 Object {
-                  "paddingVertical": 12,
+                  "paddingVertical": 3,
                 }
               }
             >
@@ -5978,7 +6159,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                 Object {
                   "borderWidth": 30,
                   "paddingHorizontal": 30,
-                  "paddingVertical": 12,
+                  "paddingVertical": 3,
                 }
               }
             >
@@ -6136,28 +6317,35 @@ exports[`Storyshots VectorIcon Style Presets 1`] = `
               }
             }
           >
-            <Text
-              allowFontScaling={false}
+            <View
               style={
-                Array [
-                  Object {
-                    "color": "black",
-                    "fontSize": 30,
-                  },
-                  undefined,
-                  Object {
-                    "fontFamily": "FontAwesome5Free-Solid",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                  Object {
-                    "fontWeight": "900",
-                  },
-                ]
+                Object {
+                  "margin": 0,
+                  "padding": 0,
+                }
               }
             >
-              
-            </Text>
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "black",
+                      "fontSize": 30,
+                    },
+                    undefined,
+                    Object {
+                      "fontFamily": "anticon",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
           </View>
         </View>
       </View>

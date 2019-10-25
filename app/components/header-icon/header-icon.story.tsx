@@ -1,16 +1,21 @@
 import * as React from "react"
 import { storiesOf } from "@storybook/react-native"
 import { StoryScreen, Story, UseCase } from "../../../storybook/views"
-import { VectorIcon } from "./"
+import { HeaderIcon } from "./"
+import { spacing } from "../../theme"
 
 declare var module
 
-storiesOf("VectorIcon", module)
+storiesOf("HeaderIcon", module)
   .addDecorator(fn => <StoryScreen>{fn()}</StoryScreen>)
   .add("Style Presets", () => (
     <Story>
       <UseCase text="Primary" usage="The primary.">
-        <VectorIcon name="plus" size={30} color="black" />
+        <HeaderIcon
+          name="home"
+          color="#efefef"
+          style={{ padding: spacing.tiny, marginLeft: spacing.tiny }}
+        />
       </UseCase>
     </Story>
   ))

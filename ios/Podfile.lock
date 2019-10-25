@@ -277,7 +277,7 @@ DEPENDENCIES:
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
-  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler/RNGestureHandler.podspec`)
   - RNKeychain (from `../node_modules/react-native-keychain`)
   - RNLocalize (from `../node_modules/react-native-localize`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
@@ -347,7 +347,7 @@ EXTERNAL SOURCES:
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-community/async-storage"
   RNGestureHandler:
-    :path: "../node_modules/react-native-gesture-handler"
+    :podspec: "../node_modules/react-native-gesture-handler/RNGestureHandler.podspec"
   RNKeychain:
     :path: "../node_modules/react-native-keychain"
   RNLocalize:
@@ -399,6 +399,6 @@ SPEC CHECKSUMS:
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   Yoga: 14927e37bd25376d216b150ab2a561773d57911f
 
-PODFILE CHECKSUM: 5ad360ebc021418a5072a74718998996eee184a5
+PODFILE CHECKSUM: b232ed3319f24673f61449d276ad670dd7a26d23
 
 COCOAPODS: 1.8.4

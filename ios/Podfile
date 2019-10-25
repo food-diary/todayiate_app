@@ -36,6 +36,8 @@ target 'tiaClient' do
 
   pod 'react-native-camera', path: '../node_modules/react-native-camera'
 
+  pod 'RNGestureHandler', :podspec => '../node_modules/react-native-gesture-handler/RNGestureHandler.podspec'
+
   target 'tiaClientTests' do
     inherit! :search_paths
     # Pods for testing

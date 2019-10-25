@@ -1,3 +1,4 @@
+require("../app/components/header-icon/header-icon.story")
 require("../app/components/tab-bar-icon/tab-bar-icon.story")
 require("../app/components/vector-icon/vector-icon.story")
 require("../app/components/text/text.story")

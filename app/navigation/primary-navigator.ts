@@ -9,7 +9,6 @@ export const PrimaryNavigator = createStackNavigator(
   },
   {
     headerMode: "none",
-    mode: "modal"
   },
 )
 

@@ -3,24 +3,57 @@ import { CameraScreen } from "../screens/camera-screen"
 import { createStackNavigator } from "react-navigation-stack"
 import { CameraRollScreen } from "../screens/camera-roll-screen"
 import { TabBarIcon } from "../components/tab-bar-icon"
+import { PicPreviewScreen } from "../screens/pic-preview-screen"
+import { color } from "../theme"
+import { HeaderIcon } from "../components/header-icon"
 
 const PhotoNavigator = createMaterialBottomTabNavigator(
   {
-    camera: { screen: CameraScreen },
-    cameraRoll: { screen: CameraRollScreen },
+    camera: createStackNavigator(
+      {
+        camera: { screen: CameraScreen },
+        preview: { screen: PicPreviewScreen },
+      },
+      {
+        initialRouteName: "camera",
+        headerMode: "none",
+      },
+    ),
+    cameraRoll: createStackNavigator(
+      {
+        cameraRoll: {
+          screen: CameraRollScreen,
+          navigationOptions: ({ navigation }) => ({
+            headerLeft: () =>
+              HeaderIcon({
+                name: "arrowleft",
+                color: color.palette.purple,
+                navigationEvent: () => navigation.pop(),
+                style: { paddingHorizontal: 15 },
+              }),
+          }),
+        },
+        preview: { screen: PicPreviewScreen },
+      },
+      {
+        initialRouteName: "cameraRoll",
+      },
+    ),
   },
   {
     defaultNavigationOptions: ({ navigation }) => ({
       tabBarIcon: ({ focused, tintColor }) => {
         let name = "camera"
         if (navigation.state.routeName === "cameraRoll") {
-          name = "images"
+          name = "picture"
         }
-        return TabBarIcon({ focused, tintColor, name })
+        const bodyStyle = { width: 30, height: 30, marginBottom: 10 }
+        return TabBarIcon({ focused, tintColor, name, bodyStyle })
       },
+      barStyle: { backgroundColor: color.palette.white },
       labeled: false,
-      activeColor: "#f0edf6",
-      inactiveColor: "#3e2465",
+      activeColor: color.palette.purple,
+      inactiveColor: color.palette.offWhite,
     }),
   },
 )

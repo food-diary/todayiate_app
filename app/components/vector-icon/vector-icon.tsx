@@ -1,21 +1,13 @@
 import * as React from "react"
-import Icon from "react-native-vector-icons/FontAwesome5"
+import Icon from "react-native-vector-icons/AntDesign"
+import Ionicon from "react-native-vector-icons/Ionicons"
+import { View, ViewStyle } from "react-native"
 
 export interface VectorIconProps {
-  /**
-   * icon's name
-   */
   name: string
-
-  /**
-   * icon's color
-   */
   color: string
-
-  /**
-   * icon's size
-   */
   size: number
+  type?: string
 }
 
 /**
@@ -23,9 +15,15 @@ export interface VectorIconProps {
  *
  * Component description here for TypeScript tips.
  */
+const antIcon = (props: VectorIconProps) => <Icon {...props} />
+const ioniconIcon = (props: VectorIconProps) => <Ionicon {...props} />
+
 export function VectorIcon(props: VectorIconProps) {
   // grab the props
-  const { name, size, color } = props
 
-  return <Icon name={name} size={size} color={color} />
+  return (
+    <View style={{ margin: 0, padding: 0 }}>
+      {props.type === "ionicon" ? ioniconIcon(props) : antIcon(props)}
+    </View>
+  )
 }

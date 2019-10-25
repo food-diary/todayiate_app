@@ -16,13 +16,16 @@ import { color } from "../../theme"
 import CameraRoll from "@react-native-community/cameraroll"
 import { NavigationStackScreenProps } from "react-navigation-stack"
 import { TouchableOpacity } from "react-native-gesture-handler"
+import SafeAreaView from "react-native-safe-area-view"
 
 export interface CameraRollScreenProps extends NavigationStackScreenProps<{}> {}
 
 const IMAGE_SIZE = Dimensions.get("screen").width / 3
 
 const ROOT: ViewStyle = {
-  backgroundColor: color.palette.white,
+  flex: 1,
+  justifyContent: "flex-start",
+  alignContent: "stretch",
 }
 
 const PHOTO_BOX: ImageStyle = {
@@ -36,7 +39,7 @@ const renderPhoto = ({ item }) => {
   return (
     <TouchableOpacity
       onPress={() => {
-        console.log(item)
+        // console.log(item)
       }}
     >
       <View>
@@ -108,7 +111,7 @@ export const CameraRollScreen: React.FunctionComponent<CameraRollScreenProps> = 
   }, [refreshing])
 
   return (
-    <Screen style={ROOT}>
+    <SafeAreaView style={ROOT}>
       <FlatList
         data={photos}
         numColumns={3}
@@ -119,6 +122,6 @@ export const CameraRollScreen: React.FunctionComponent<CameraRollScreenProps> = 
         onEndReached={onEndReachedList}
         refreshing={refreshing}
       />
-    </Screen>
+    </SafeAreaView>
   )
 })

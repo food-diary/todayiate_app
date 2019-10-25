@@ -1,11 +1,12 @@
 import * as React from "react"
-import { View } from "react-native"
+import { View, ViewStyle } from "react-native"
 import { VectorIcon } from "../vector-icon"
 
 export interface TabBarIconProps {
   name: string
-  focused: boolean
+  focused?: boolean
   tintColor?: string
+  bodyStyle?: ViewStyle
 }
 
 /**
@@ -15,11 +16,11 @@ export interface TabBarIconProps {
  */
 export function TabBarIcon(props: TabBarIconProps) {
   // grab the props
-  const { name, tintColor } = props
+  const { name, tintColor, bodyStyle } = props
 
   return (
-    <View style={{ width: 24, height: 24, margin: 5 }}>
-      <VectorIcon name={name} size={22} color={tintColor} />
+    <View style={bodyStyle || { width: 30, height: 30, margin: 5 }}>
+      <VectorIcon name={name} size={30} color={tintColor} />
     </View>
   )
 }

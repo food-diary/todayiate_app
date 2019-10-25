@@ -106,7 +106,8 @@
     "preset": "react-native",
     "setupFiles": [
       "<rootDir>/node_modules/react-native/jest/setup.js",
-      "<rootDir>/test/setup.ts"
+      "<rootDir>/test/setup.ts",
+      "<rootDir>/node_modules/react-native-gesture-handler/jestSetup.js"
     ],
     "testPathIgnorePatterns": [
       "/node_modules/",

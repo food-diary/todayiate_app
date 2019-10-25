@@ -3,6 +3,7 @@ import { HomeNavigator } from "./home-navigator"
 import { ProfileNavigator } from "./profile-navigator"
 import { TabBarIcon } from "../components/tab-bar-icon"
 import { View, Platform } from "react-native"
+import { color } from "../theme"
 
 const IOS_BOTTOM_TAB = {
   borderTopWidth: 0,
@@ -40,8 +41,8 @@ export const BottomNavigator = createBottomTabNavigator(
     }),
     tabBarOptions: {
       showLabel: false,
-      activeTintColor: "tomato",
-      inactiveTintColor: "gray",
+      activeTintColor: color.palette.purple,
+      inactiveTintColor: color.palette.lighterGrey,
       style: Platform.OS === "ios" ? IOS_BOTTOM_TAB : ANDROID_BOTTOM_TAB,
     },
   },
