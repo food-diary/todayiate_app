@@ -7,14 +7,13 @@ import { Screen } from "../../components/screen"
 import { color } from "../../theme"
 import { NavigationStackScreenProps } from "react-navigation-stack"
 
-export interface SignupScreenProps extends NavigationStackScreenProps<{}> {
-}
+export interface SignupScreenProps extends NavigationStackScreenProps<{}> {}
 
 const ROOT: ViewStyle = {
   backgroundColor: color.palette.white,
 }
 
-export const SignupScreen: React.FunctionComponent<SignupScreenProps> = observer((props) => {
+export const SignupScreen: React.FunctionComponent<SignupScreenProps> = observer(props => {
   // const { someStore } = useStores()
   return (
     <Screen style={ROOT} preset="scroll">

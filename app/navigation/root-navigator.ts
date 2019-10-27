@@ -4,8 +4,8 @@ import { AuthNavigator } from "./auth-navigator"
 
 export const RootNavigator = createStackNavigator(
   {
-    primaryStack: { screen: PrimaryNavigator },
     authStack: { screen: AuthNavigator },
+    primaryStack: { screen: PrimaryNavigator },
   },
   {
     headerMode: "none",

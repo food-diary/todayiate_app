@@ -39,6 +39,7 @@
  * 8 = massive - an uncomfortable amount of whitespace
  */
 export const spacing = {
+  none: 0,
   tiny: 4,
   small: 8,
   medium: 12,

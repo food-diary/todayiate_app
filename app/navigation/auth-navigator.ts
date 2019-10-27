@@ -1,8 +1,10 @@
 import { createStackNavigator } from "react-navigation-stack"
 import { SignupScreen } from "../screens/signup-screen"
+import { WelcomeScreen } from "../screens/welcome-screen"
 
 export const AuthNavigator = createStackNavigator(
   {
+    welcome: { screen: WelcomeScreen },
     signup: { screen: SignupScreen },
   },
   {

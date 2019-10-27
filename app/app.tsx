@@ -11,6 +11,9 @@ import { RootStore, RootStoreProvider, setupRootStore } from "./models/root-stor
 
 import { contains } from "ramda"
 
+import Amplify from "aws-amplify"
+import awsconfig from "../aws-exports"
+
 /**
  * Ignore some yellowbox warnings. Some of these are for deprecated functions
  * that we haven't gotten around to replacing yet.
@@ -42,6 +45,11 @@ Object.defineProperty(ReactNative, "AsyncStorage", {
  * @param routeName The currently active route name.
  */
 const canExit = (routeName: string) => contains(routeName, exitRoutes)
+
+/**
+ * Amplify configure
+ */
+Amplify.configure(awsconfig)
 
 /**
  * This is the root component of our app.

@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "tiaclient-dev-20191026203620-authRole",
+            "UnauthRoleArn": "arn:aws:iam::502320832749:role/tiaclient-dev-20191026203620-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::502320832749:role/tiaclient-dev-20191026203620-authRole",
+            "Region": "ap-northeast-2",
+            "DeploymentBucketName": "tiaclient-dev-20191026203620-deployment",
+            "UnauthRoleName": "tiaclient-dev-20191026203620-unauthRole",
+            "StackName": "tiaclient-dev-20191026203620",
+            "StackId": "arn:aws:cloudformation:ap-northeast-2:502320832749:stack/tiaclient-dev-20191026203620/d5b58cc0-f7e4-11e9-824c-022ba4b65eea"
+        }
+    }
+}
