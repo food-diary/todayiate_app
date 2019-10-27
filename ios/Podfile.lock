@@ -237,6 +237,8 @@ PODS:
     - React
   - RNGestureHandler (1.4.1):
     - React
+  - RNInAppBrowser (3.1.0):
+    - React
   - RNKeychain (3.1.3):
     - React
   - RNLocalize (1.3.1):
@@ -283,6 +285,7 @@ DEPENDENCIES:
   - RNAWSCognito (from `../node_modules/amazon-cognito-identity-js`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNInAppBrowser (from `../node_modules/react-native-inappbrowser-reborn`)
   - RNKeychain (from `../node_modules/react-native-keychain`)
   - RNLocalize (from `../node_modules/react-native-localize`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
@@ -356,6 +359,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-community/async-storage"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNInAppBrowser:
+    :path: "../node_modules/react-native-inappbrowser-reborn"
   RNKeychain:
     :path: "../node_modules/react-native-keychain"
   RNLocalize:
@@ -402,6 +407,7 @@ SPEC CHECKSUMS:
   RNAWSCognito: 03b50ccc9dc30c1dc8d7c8446d1885d226be8ba2
   RNCAsyncStorage: 60a80e72d95bf02a01cace55d3697d9724f0d77f
   RNGestureHandler: 4cb47a93019c1a201df2644413a0a1569a51c8aa
+  RNInAppBrowser: 9d1ffb9db0d0cbdf03f528f1f0624b2c533b93fd
   RNKeychain: c658833a9cb2cbcba6423bdd6e16cce59e27da0e
   RNLocalize: 07eb7a91d10021cdf59d80061ebf3adb8a5b5688
   RNReanimated: 6abbbae2e5e72609d85aabd92a982a94566885f1
