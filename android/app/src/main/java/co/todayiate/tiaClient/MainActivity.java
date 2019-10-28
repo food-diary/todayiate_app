@@ -1,4 +1,4 @@
-package com.tiaclient;
+package co.todayiate.tiaClient;
 
 import com.facebook.react.ReactActivity;
 

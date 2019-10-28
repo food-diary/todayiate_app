@@ -1,4 +1,4 @@
-package com.tiaclient;
+package co.todayiate.tiaClient;
 
 import android.app.Application;
 import android.content.Context;

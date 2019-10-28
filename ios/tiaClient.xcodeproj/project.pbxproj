@@ -769,7 +769,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.todayiate.tia-client";
+				PRODUCT_BUNDLE_IDENTIFIER = co.todayiate.tiaClient;
 				PRODUCT_NAME = tiaClient;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -790,7 +790,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.todayiate.tia-client";
+				PRODUCT_BUNDLE_IDENTIFIER = co.todayiate.tiaClient;
 				PRODUCT_NAME = tiaClient;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
