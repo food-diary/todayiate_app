@@ -21,5 +21,10 @@ export const StatefulNavigator: React.FunctionComponent<{}> = observer(() => {
     () => currentNavigation,
   )
 
-  return <RootNavigator navigation={currentNavigation} />
+  /**
+   * URI scheme
+   */
+  const prefix = "tia://"
+
+  return <RootNavigator uriPrefix={prefix} navigation={currentNavigation} />
 })

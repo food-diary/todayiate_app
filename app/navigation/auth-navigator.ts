@@ -4,7 +4,10 @@ import { WelcomeScreen } from "../screens/welcome-screen"
 
 export const AuthNavigator = createStackNavigator(
   {
-    welcome: { screen: WelcomeScreen },
+    welcome: {
+      screen: WelcomeScreen,
+      path: "welcome",
+    },
     signup: { screen: SignupScreen },
   },
   {

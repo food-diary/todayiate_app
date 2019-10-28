@@ -9,6 +9,13 @@
             "UnauthRoleName": "tiaclient-dev-20191026203620-unauthRole",
             "StackName": "tiaclient-dev-20191026203620",
             "StackId": "arn:aws:cloudformation:ap-northeast-2:502320832749:stack/tiaclient-dev-20191026203620/d5b58cc0-f7e4-11e9-824c-022ba4b65eea"
+        },
+        "categories": {
+            "auth": {
+                "tiaclient5cff7539": {
+                    "hostedUIProviderCreds": "[]"
+                }
+            }
         }
     }
 }

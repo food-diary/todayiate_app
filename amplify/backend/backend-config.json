@@ -1,4 +1,10 @@
 {
-	"auth": {},
+	"auth": {
+		"tiaclient5cff7539": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
 	"function": {}
 }
