@@ -9,6 +9,7 @@ export const PrimaryNavigator = createStackNavigator(
   },
   {
     headerMode: "none",
+    initialRouteName: "bottomTab"
   },
 )
 

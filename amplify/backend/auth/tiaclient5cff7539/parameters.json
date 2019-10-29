@@ -52,6 +52,6 @@
     "hostedUIDomainName": "todayiate",
     "authProvidersUserPool": [],
     "hostedUIProviderMeta": "[]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"tia://welcome/\"],\"LogoutURLs\":[\"tia://welcome/\"]}",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"tia://authloading/\"],\"LogoutURLs\":[\"tia://authloading/\"]}",
     "dependsOn": []
 }

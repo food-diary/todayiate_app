@@ -45,5 +45,6 @@ export const BottomNavigator = createBottomTabNavigator(
       inactiveTintColor: color.palette.lighterGrey,
       style: Platform.OS === "ios" ? IOS_BOTTOM_TAB : ANDROID_BOTTOM_TAB,
     },
+    initialRouteName: "homeStack"
   },
 )
