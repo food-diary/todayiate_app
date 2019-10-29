@@ -1,6 +1,6 @@
 import * as React from "react"
 import { observer } from "mobx-react-lite"
-import { ViewStyle, TextStyle } from "react-native"
+import { ViewStyle, TextStyle, ImageStyle, View } from "react-native"
 import { Text } from "../../components/text"
 import { Screen } from "../../components/screen"
 import { color, spacing } from "../../theme"
@@ -8,38 +8,66 @@ import { NavigationStackScreenProps } from "react-navigation-stack"
 import { Button } from "../../components/button"
 import { Auth } from "aws-amplify"
 import { CognitoHostedUIIdentityProvider } from "@aws-amplify/auth"
+import { fontStyle } from "../../theme/fontStyle"
+import { Icon } from "../../components/icon"
 
 export interface WelcomeScreenProps extends NavigationStackScreenProps<{}> {}
 
 const ROOT: ViewStyle = {
-  backgroundColor: color.palette.lightPurple,
+  flex: 1,
+  backgroundColor: color.palette.white,
   padding: spacing.medium,
+  justifyContent: "center"
+}
+
+const HEADER_TEXT_WRAP: ViewStyle = {
+  margin: 10,
+  alignSelf: "center",
 }
 
 const HEADER_TEXT: TextStyle = {
-  color: color.palette.white,
-  paddingVertical: spacing.large,
-  marginTop: spacing.huge,
+  fontSize: fontStyle.headline1,
+  fontWeight: "bold",
+  color: color.palette.black,
 }
 
-const GO_TO_SIGNUP: TextStyle = {
-  backgroundColor: color.palette.white,
-  borderColor: color.palette.white,
-  borderWidth: 1,
+const GO_TO_SIGNUP: ViewStyle = {
+  backgroundColor: color.palette.lightPurple,
   borderRadius: 30,
   paddingVertical: spacing.medium,
   marginTop: spacing.medium,
+  shadowColor: "#000",
+  shadowOffset: {
+    width: 0,
+    height: 2,
+  },
+  shadowOpacity: 0.23,
+  shadowRadius: 2.62,
+
+  elevation: 4,
 }
 
 const SIGNUP_TEXT: TextStyle = {
-  fontSize: 18,
-  color: color.palette.purple,
+  fontSize: fontStyle.headline4,
+  color: color.palette.white,
+}
+
+const ICON: ImageStyle = {
+  width: 200,
+  height: 200,
+  alignSelf: "center",
 }
 
 export const WelcomeScreen: React.FunctionComponent<WelcomeScreenProps> = observer(props => {
   return (
     <Screen style={ROOT}>
-      <Text preset="header" text="식사일기에 오신 것을 환영합니다." style={HEADER_TEXT} />
+      <View style={HEADER_TEXT_WRAP}>
+        <Text preset="header" text="식" style={HEADER_TEXT} />
+        <Text preset="header" text="사" style={HEADER_TEXT} />
+        <Text preset="header" text="일" style={HEADER_TEXT} />
+        <Text preset="header" text="기" style={HEADER_TEXT} />
+      </View>
+      <Icon icon="logo" style={ICON} />
       <Button
         onPress={() =>
           Auth.federatedSignIn({

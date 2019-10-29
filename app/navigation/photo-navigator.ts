@@ -11,17 +11,17 @@ const PhotoNavigator = createMaterialBottomTabNavigator(
   {
     camera: createStackNavigator(
       {
-        camera: { screen: CameraScreen },
+        takeCamera: { screen: CameraScreen },
         preview: { screen: PicPreviewScreen },
       },
       {
-        initialRouteName: "camera",
+        initialRouteName: "takeCamera",
         headerMode: "none",
       },
     ),
     cameraRoll: createStackNavigator(
       {
-        cameraRoll: {
+        takeCameraRoll: {
           screen: CameraRollScreen,
           navigationOptions: ({ navigation }) => ({
             headerLeft: () =>
@@ -36,7 +36,7 @@ const PhotoNavigator = createMaterialBottomTabNavigator(
         preview: { screen: PicPreviewScreen },
       },
       {
-        initialRouteName: "cameraRoll",
+        initialRouteName: "takeCameraRoll",
       },
     ),
   },

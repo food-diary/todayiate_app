@@ -1,5 +1,4 @@
 import { PrimaryNavigator } from "./primary-navigator"
-import { createSwitchNavigator } from "react-navigation"
 import { WelcomeScreen } from "../screens/welcome-screen"
 import { AuthLoadingScreen } from "../screens/auth-loading-screen"
 import { createStackNavigator } from "react-navigation-stack"

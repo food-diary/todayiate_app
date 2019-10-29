@@ -35,7 +35,7 @@ const APERTURE: ViewStyle = {
 const BACK_BUTTON: ViewStyle = {
   width: "100%",
   position: "absolute",
-  top: 9,
+  top: Platform.OS === "ios" ? 22 : 9,
   left: 6,
   flex: 1,
 }

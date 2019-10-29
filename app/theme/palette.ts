@@ -1,5 +1,5 @@
 export const palette = {
-  black: "#1d1d1d",
+  black: "#080808",
   white: "#ffffff",
   offWhite: "#e6e6e6",
   orange: "#FBA928",
@@ -9,4 +9,8 @@ export const palette = {
   angry: "#dd3333",
   purple: "#3e2465",
   lightPurple: "#7243ba",
+  prettyPink: "#FF2D55",
+  babyPink: "#FF829A",
+  lightPink: "#FFBFCB",
+  lighterPink: "#FFD5DD",
 }
