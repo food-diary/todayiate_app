@@ -10,29 +10,28 @@ import { Auth } from "aws-amplify"
 import { CognitoHostedUIIdentityProvider } from "@aws-amplify/auth"
 import { fontStyle } from "../../theme/fontStyle"
 import { Icon } from "../../components/icon"
+import { VectorIcon } from "../../components/vector-icon"
 
 export interface WelcomeScreenProps extends NavigationStackScreenProps<{}> {}
 
 const ROOT: ViewStyle = {
   flex: 1,
-  backgroundColor: color.palette.white,
+  backgroundColor: color.palette.lightYellow,
   padding: spacing.medium,
-  justifyContent: "center"
 }
 
 const HEADER_TEXT_WRAP: ViewStyle = {
   margin: 10,
-  alignSelf: "center",
 }
 
 const HEADER_TEXT: TextStyle = {
-  fontSize: fontStyle.headline1,
+  fontSize: fontStyle.largeTitle,
   fontWeight: "bold",
   color: color.palette.black,
 }
 
 const GO_TO_SIGNUP: ViewStyle = {
-  backgroundColor: color.palette.lightPurple,
+  backgroundColor: color.palette.green,
   borderRadius: 30,
   paddingVertical: spacing.medium,
   marginTop: spacing.medium,
@@ -48,26 +47,25 @@ const GO_TO_SIGNUP: ViewStyle = {
 }
 
 const SIGNUP_TEXT: TextStyle = {
-  fontSize: fontStyle.headline4,
+  fontSize: fontStyle.headline5,
   color: color.palette.white,
+  marginLeft: spacing.small,
 }
 
 const ICON: ImageStyle = {
-  width: 200,
-  height: 200,
-  alignSelf: "center",
+  width: 100,
+  height: 100,
+  marginTop: spacing.huge,
 }
 
 export const WelcomeScreen: React.FunctionComponent<WelcomeScreenProps> = observer(props => {
   return (
     <Screen style={ROOT}>
-      <View style={HEADER_TEXT_WRAP}>
-        <Text preset="header" text="식" style={HEADER_TEXT} />
-        <Text preset="header" text="사" style={HEADER_TEXT} />
-        <Text preset="header" text="일" style={HEADER_TEXT} />
-        <Text preset="header" text="기" style={HEADER_TEXT} />
-      </View>
       <Icon icon="logo" style={ICON} />
+      <View style={HEADER_TEXT_WRAP}>
+        <Text preset="header" text="식사일기에 오신 것을" style={HEADER_TEXT} />
+        <Text preset="header" text="환영합니다." style={HEADER_TEXT} />
+      </View>
       <Button
         onPress={() =>
           Auth.federatedSignIn({
@@ -75,7 +73,12 @@ export const WelcomeScreen: React.FunctionComponent<WelcomeScreenProps> = observ
           })
         }
         style={GO_TO_SIGNUP}
-        children={<Text text="구글 계정으로 로그인" style={SIGNUP_TEXT} />}
+        children={
+          <View style={{ flexDirection: "row", alignItems: "center" }}>
+            <VectorIcon name="google" color={color.palette.white} size={fontStyle.headline5} />
+            <Text text="구글 계정으로 로그인" style={SIGNUP_TEXT} />
+          </View>
+        }
       />
     </Screen>
   )

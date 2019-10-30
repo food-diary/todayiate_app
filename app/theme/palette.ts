@@ -13,4 +13,7 @@ export const palette = {
   babyPink: "#FF829A",
   lightPink: "#FFBFCB",
   lighterPink: "#FFD5DD",
+  green: "#43a838",
+  lightGreen: "#afe046",
+  lightYellow: "#e5e897",
 }
