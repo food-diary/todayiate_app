@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "tiaclient",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authtiaclient5cff7539",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

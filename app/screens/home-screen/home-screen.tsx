@@ -14,8 +14,9 @@ const ROOT: ViewStyle = {
   backgroundColor: color.palette.white,
 }
 
-export const HomeScreen: React.FunctionComponent<HomeScreenProps> = observer((props) => {
+export const HomeScreen: React.FunctionComponent<HomeScreenProps> = observer(props => {
   // const { someStore } = useStores()
+
   return (
     <Screen style={ROOT}>
       <Text preset="header" text="식단일기" />

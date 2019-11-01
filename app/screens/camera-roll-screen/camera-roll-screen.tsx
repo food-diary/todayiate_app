@@ -2,7 +2,6 @@ import * as React from "react"
 import { observer } from "mobx-react-lite"
 import {
   ViewStyle,
-  ScrollView,
   Image,
   ImageStyle,
   Dimensions,
@@ -11,12 +10,15 @@ import {
   PermissionsAndroid,
   Platform,
 } from "react-native"
-import { Screen } from "../../components/screen"
-import { color } from "../../theme"
 import CameraRoll from "@react-native-community/cameraroll"
 import { NavigationStackScreenProps } from "react-navigation-stack"
 import { TouchableOpacity } from "react-native-gesture-handler"
 import SafeAreaView from "react-native-safe-area-view"
+import { API, graphqlOperation, Storage } from "aws-amplify"
+import uuid from "react-native-uuid"
+import { load } from "../../utils/storage"
+import * as mutations from "../../graphql/mutations"
+import awsconfig from "../../../aws-exports"
 
 export interface CameraRollScreenProps extends NavigationStackScreenProps<{}> {}
 
@@ -33,13 +35,51 @@ const PHOTO_BOX: ImageStyle = {
   height: IMAGE_SIZE,
 }
 
+const uploadToStorage = async (uri, filename) => {
+  const response = await fetch(uri)
+
+  const blob = await response.blob()
+
+  try {
+    return await Storage.put(filename, blob, {
+      contentType: "image/jpeg",
+      level: "public",
+    })
+  } catch (e) {
+    console.log(e)
+  }
+}
+
 const renderPhoto = ({ item }) => {
   if (!item.node) return
 
   return (
     <TouchableOpacity
-      onPress={() => {
-        // console.log(item)
+      onPress={async () => {
+        console.log(item.node.image.uri)
+        const user = await load("user")
+        const id = uuid.v1()
+        const key = await uploadToStorage(item.node.image.uri, item.node.image.filename)
+        const data = {
+          id,
+          userId: user.username.split("_")[1],
+          username: user.username,
+          file: {
+            bucket: awsconfig.aws_user_files_s3_bucket,
+            region: awsconfig.aws_user_files_s3_bucket_region,
+            key,
+            uri: item.node.image.uri,
+          },
+        }
+        try {
+          await API.graphql(
+            graphqlOperation(mutations.createPicture, {
+              input: data,
+            }),
+          )
+        } catch (e) {
+          console.log(e)
+        }
       }}
     >
       <View>

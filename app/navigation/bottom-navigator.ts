@@ -41,7 +41,7 @@ export const BottomNavigator = createBottomTabNavigator(
     }),
     tabBarOptions: {
       showLabel: false,
-      activeTintColor: color.palette.purple,
+      activeTintColor: color.palette.green,
       inactiveTintColor: color.palette.lighterGrey,
       style: Platform.OS === "ios" ? IOS_BOTTOM_TAB : ANDROID_BOTTOM_TAB,
     },

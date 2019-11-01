@@ -6,5 +6,28 @@
 			"dependsOn": []
 		}
 	},
-	"function": {}
+	"function": {},
+	"api": {
+		"tiaclient": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authtiaclient5cff7539"
+						}
+					}
+				}
+			}
+		}
+	},
+	"storage": {
+		"todayiate": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
 }
