@@ -8,7 +8,7 @@ import { useCamera } from "react-native-camera-hooks"
 import { CameraOptions } from "react-native-camera-hooks/src/initialState"
 import { NavigationStackScreenProps, NavigationStackProp } from "react-navigation-stack"
 import { VectorIcon } from "../../components/vector-icon"
-import SafeAreaView from "react-native-safe-area-view"
+import { SafeAreaView } from "react-navigation"
 import { HeaderIcon } from "../../components/header-icon"
 
 export interface CameraScreenProps extends CameraOptions, NavigationStackScreenProps<{}> {}

@@ -2,6 +2,22 @@ import { ApisauceInstance, create, ApiResponse } from "apisauce"
 import { getGeneralApiProblem } from "./api-problem"
 import { ApiConfig, DEFAULT_API_CONFIG } from "./api-config"
 import * as Types from "./api.types"
+import { GraphQLResult } from "@aws-amplify/api/lib-esm/types"
+import { API, graphqlOperation } from "aws-amplify"
+import * as queries from "../../graphql/queries"
+import { PictureSnapshot } from "../../models/picture"
+
+const convertPicture = (raw: any): PictureSnapshot => {
+  return {
+    id: raw.id,
+    userId: raw.userId,
+    username: raw.username,
+    bucket: raw.file.bucket,
+    region: raw.file.region,
+    key: raw.file.key,
+    uri: raw.file.uri,
+  }
+}
 
 /**
  * Manages all requests to the API.
@@ -42,6 +58,19 @@ export class Api {
         Accept: "application/json",
       },
     })
+  }
+
+  async getPictureList(): Promise<any> {
+    try {
+      const response = await API.graphql(graphqlOperation(queries.listPictures))
+      // @ts-ignore
+      const responseData = await response.data.listPictures
+      const resultPicture: Types.Picture[] = responseData.items.map(convertPicture)
+      const resultToken: string = responseData.nextToken || ""
+      return { kind: "ok", pictures: resultPicture, nextToken: resultToken }
+    } catch (e) {
+      return { kind: JSON.stringify(e) }
+    }
   }
 
   /**

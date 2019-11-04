@@ -6,14 +6,13 @@ import {
   ImageStyle,
   Dimensions,
   View,
-  FlatList,
   PermissionsAndroid,
   Platform,
 } from "react-native"
 import CameraRoll from "@react-native-community/cameraroll"
 import { NavigationStackScreenProps } from "react-navigation-stack"
-import { TouchableOpacity } from "react-native-gesture-handler"
-import SafeAreaView from "react-native-safe-area-view"
+import { TouchableOpacity, FlatList } from "react-native-gesture-handler"
+import { SafeAreaView } from "react-navigation"
 import { API, graphqlOperation, Storage } from "aws-amplify"
 import uuid from "react-native-uuid"
 import { load } from "../../utils/storage"
@@ -50,38 +49,37 @@ const uploadToStorage = async (uri, filename) => {
   }
 }
 
+const uploadToDynamo = async item => {
+  const user = await load("user")
+  const id = uuid.v1()
+  const key = await uploadToStorage(item.node.image.uri, item.node.image.filename)
+  const data = {
+    id,
+    userId: user.username.split("_")[1],
+    username: user.username,
+    file: {
+      bucket: awsconfig.aws_user_files_s3_bucket,
+      region: awsconfig.aws_user_files_s3_bucket_region,
+      key,
+      uri: item.node.image.uri,
+    },
+  }
+  try {
+    await API.graphql(
+      graphqlOperation(mutations.createPicture, {
+        input: data,
+      }),
+    )
+  } catch (e) {
+    console.log(e)
+  }
+}
+
 const renderPhoto = ({ item }) => {
   if (!item.node) return
 
   return (
-    <TouchableOpacity
-      onPress={async () => {
-        console.log(item.node.image.uri)
-        const user = await load("user")
-        const id = uuid.v1()
-        const key = await uploadToStorage(item.node.image.uri, item.node.image.filename)
-        const data = {
-          id,
-          userId: user.username.split("_")[1],
-          username: user.username,
-          file: {
-            bucket: awsconfig.aws_user_files_s3_bucket,
-            region: awsconfig.aws_user_files_s3_bucket_region,
-            key,
-            uri: item.node.image.uri,
-          },
-        }
-        try {
-          await API.graphql(
-            graphqlOperation(mutations.createPicture, {
-              input: data,
-            }),
-          )
-        } catch (e) {
-          console.log(e)
-        }
-      }}
-    >
+    <TouchableOpacity onPress={async () => await uploadToDynamo(item)}>
       <View>
         <Image style={PHOTO_BOX} source={{ uri: item.node.image.uri }} />
       </View>
