@@ -1,15 +1,15 @@
 import * as React from "react"
 import { observer } from "mobx-react-lite"
-import { ViewStyle, TextStyle } from "react-native"
+import { ViewStyle, TextStyle, StatusBar } from "react-native"
 import { Text } from "../../components/text"
 import { Screen } from "../../components/screen"
 // import { useStores } from "../../models/root-store"
 import { color, spacing } from "../../theme"
-import { NavigationStackScreenProps } from "react-navigation-stack"
 import { Button } from "../../components/button"
 import { Auth } from "aws-amplify"
+import { NavigationScreenProps } from "react-navigation"
 
-export interface ProfileScreenProps extends NavigationStackScreenProps<{}> {}
+export interface ProfileScreenProps extends NavigationScreenProps<{}> {}
 
 const ROOT: ViewStyle = {
   backgroundColor: color.palette.white,
@@ -40,6 +40,7 @@ export const ProfileScreen: React.FunctionComponent<ProfileScreenProps> = observ
   // const { someStore } = useStores()
   return (
     <Screen style={ROOT}>
+      <StatusBar barStyle="dark-content" />
       <Button
         onPress={() => signOut(navigation)}
         style={GO_TO_HOME}

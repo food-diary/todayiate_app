@@ -1,4 +1,4 @@
-import { createStackNavigator } from "react-navigation-stack"
+import { createStackNavigator } from "react-navigation"
 import { BottomNavigator } from "./bottom-navigator"
 import photoNavigator from "./photo-navigator"
 

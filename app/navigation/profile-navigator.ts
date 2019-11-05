@@ -1,4 +1,4 @@
-import { createStackNavigator } from "react-navigation-stack"
+import { createStackNavigator } from "react-navigation"
 import { ProfileScreen } from "../screens/profile-screen"
 
 export const ProfileNavigator = createStackNavigator(

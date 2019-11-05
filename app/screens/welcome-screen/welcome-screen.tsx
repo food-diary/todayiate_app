@@ -4,15 +4,15 @@ import { ViewStyle, TextStyle, ImageStyle, View } from "react-native"
 import { Text } from "../../components/text"
 import { Screen } from "../../components/screen"
 import { color, spacing } from "../../theme"
-import { NavigationStackScreenProps } from "react-navigation-stack"
 import { Button } from "../../components/button"
 import { Auth } from "aws-amplify"
 import { CognitoHostedUIIdentityProvider } from "@aws-amplify/auth"
 import { fontStyle } from "../../theme/fontStyle"
 import { Icon } from "../../components/icon"
 import { VectorIcon } from "../../components/vector-icon"
+import { NavigationScreenProps } from "react-navigation"
 
-export interface WelcomeScreenProps extends NavigationStackScreenProps<{}> {}
+export interface WelcomeScreenProps extends NavigationScreenProps<{}> {}
 
 const ROOT: ViewStyle = {
   flex: 1,

@@ -6,12 +6,12 @@ import { color, spacing } from "../../theme"
 import { RNCamera } from "react-native-camera"
 import { useCamera } from "react-native-camera-hooks"
 import { CameraOptions } from "react-native-camera-hooks/src/initialState"
-import { NavigationStackScreenProps, NavigationStackProp } from "react-navigation-stack"
 import { VectorIcon } from "../../components/vector-icon"
-import { SafeAreaView } from "react-navigation"
+import { SafeAreaView, NavigationScreenProps } from "react-navigation"
 import { HeaderIcon } from "../../components/header-icon"
+import { NavigationProp } from "react-navigation"
 
-export interface CameraScreenProps extends CameraOptions, NavigationStackScreenProps<{}> {}
+export interface CameraScreenProps extends CameraOptions, NavigationScreenProps<{}> {}
 
 const ROOT: ViewStyle = {
   flex: 1,
@@ -40,7 +40,7 @@ const BACK_BUTTON: ViewStyle = {
   flex: 1,
 }
 
-const renderBackbutton = (navigation: NavigationStackProp) => {
+const renderBackbutton = (navigation) => {
   return (
     <View style={BACK_BUTTON}>
       <HeaderIcon

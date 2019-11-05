@@ -1,9 +1,9 @@
-import { createBottomTabNavigator } from "react-navigation-tabs"
 import { HomeNavigator } from "./home-navigator"
 import { ProfileNavigator } from "./profile-navigator"
 import { TabBarIcon } from "../components/tab-bar-icon"
 import { View, Platform } from "react-native"
 import { color } from "../theme"
+import { createBottomTabNavigator } from "react-navigation"
 
 const IOS_BOTTOM_TAB = {
   borderTopWidth: 0,

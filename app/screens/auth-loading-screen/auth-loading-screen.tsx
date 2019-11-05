@@ -4,11 +4,11 @@ import { ViewStyle } from "react-native"
 import { Text } from "../../components/text"
 import { Screen } from "../../components/screen"
 import { color } from "../../theme"
-import { NavigationStackScreenProps } from "react-navigation-stack"
 import { Hub } from "aws-amplify"
 import { load, save, remove } from "../../utils/storage"
+import { NavigationScreenProps } from "react-navigation"
 
-export interface AuthLoadingScreenProps extends NavigationStackScreenProps<{}> {}
+export interface AuthLoadingScreenProps extends NavigationScreenProps<{}> {}
 
 const ROOT: ViewStyle = {
   backgroundColor: color.palette.white,

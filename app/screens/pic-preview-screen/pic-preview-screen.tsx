@@ -5,9 +5,9 @@ import { Text } from "../../components/text"
 import { Screen } from "../../components/screen"
 // import { useStores } from "../../models/root-store"
 import { color } from "../../theme"
-import { NavigationStackScreenProps } from "react-navigation-stack"
+import { NavigationScreenProps } from "react-navigation"
 
-export interface PicPreviewScreenProps extends NavigationStackScreenProps<{}> {
+export interface PicPreviewScreenProps extends NavigationScreenProps<{}> {
 }
 
 const ROOT: ViewStyle = {

@@ -1,13 +1,13 @@
-import { createMaterialBottomTabNavigator } from "react-navigation-material-bottom-tabs"
 import { CameraScreen } from "../screens/camera-screen"
-import { createStackNavigator } from "react-navigation-stack"
+import { createStackNavigator } from "react-navigation"
 import { CameraRollScreen } from "../screens/camera-roll-screen"
 import { TabBarIcon } from "../components/tab-bar-icon"
 import { PicPreviewScreen } from "../screens/pic-preview-screen"
 import { color } from "../theme"
 import { HeaderIcon } from "../components/header-icon"
+import { createMaterialTopTabNavigator } from "react-navigation"
 
-const PhotoNavigator = createMaterialBottomTabNavigator(
+const PhotoNavigator = createMaterialTopTabNavigator(
   {
     camera: createStackNavigator(
       {
@@ -54,6 +54,7 @@ const PhotoNavigator = createMaterialBottomTabNavigator(
       labeled: false,
       activeColor: color.palette.purple,
       inactiveColor: color.palette.offWhite,
+      tabBarPosition: "bottom",
     }),
   },
 )
